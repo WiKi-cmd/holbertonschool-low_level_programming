@@ -1,13 +1,10 @@
+#include "main.h"
+
 /**
 * main - entry point
 *
-*@c: The character to print
-*
 * Return: always 0 for succes
 */
-
-int _putchar(char c);
-
 int main(void)
 {
 	_putchar('_');
