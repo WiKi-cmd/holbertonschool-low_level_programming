@@ -1,7 +1,9 @@
 /**
 * main - entry point
 *
-*Return: always 0 for succes
+*@c: The character to print
+*
+* Return: always 0 for succes
 */
 
 int _putchar(char c);
