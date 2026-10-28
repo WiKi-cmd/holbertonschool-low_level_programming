@@ -1,5 +1,8 @@
 #include "main.h"
 
+/**
+* more_numbers - entry point
+*/
 void more_numbers(void)
 {
 	int i, j;
