@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* int mul - entry point
+* mul - entry point
 * @a: first number we want to multiply
 * @b: second number we want to multiply
 *
