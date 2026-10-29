@@ -14,6 +14,12 @@ int main(void)
 	printf("0) Quit\n");
 	printf("Choice: ");
 	scanf("%d", &choix);
+	while (choix > 4)
+	{
+		printf("Invalid choice\n");
+		printf("Choice: ");
+		scanf("%d", &choix);
+	}
 	if (choix == 0)
 	{
 		printf("Bye!\n");
