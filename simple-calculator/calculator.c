@@ -16,6 +16,7 @@ int main(void)
 	scanf("%d", &choix);
 	if (choix == 0)
 	{
+		printf("Bye!\n");
 		return (0);
 	}
 	return (0);
