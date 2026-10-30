@@ -11,6 +11,16 @@ void add(void)
 	printf("Result: %d\n", a + b);
 }
 
+void sub(void)
+{
+	int a, b;
+
+	printf("A: ");
+	scanf("%d", &a);
+	printf("B: ");
+	scanf("%d", &b);
+	printf("Result: %d\n", a - b);
+}
 
 int main(void)
 {
@@ -31,14 +41,18 @@ int main(void)
 		{
 			printf("Invalid choice\n");
 		}
-		if (choix == 0)
+		else if (choix == 0)
 		{
 		printf("Bye!\n");
 		return (0);
 		}
-		if (choix == 1)
+		else if (choix == 1)
 		{
 			add();
+		}
+		else if (choix == 2)
+		{
+			sub();
 		}
 	} while(choix != 0);
 	return (0);
