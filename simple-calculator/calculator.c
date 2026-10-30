@@ -43,7 +43,7 @@ void div(void)
 	scanf("%d", &b);
 	if (b == 0)
 	{
-		printf("Error: division by zero");
+		printf("Error: division by zero\n");
 	}
 	else
 	{
