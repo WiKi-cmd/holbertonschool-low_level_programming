@@ -22,6 +22,17 @@ void sub(void)
 	printf("Result: %d\n", a - b);
 }
 
+void mul(void)
+{
+	int a, b;
+
+	printf("A: ");
+	scanf("%d", &a);
+	printf("B: ");
+	scanf("%d", &b);
+	printf("Result: %d\n", a * b);
+}
+
 int main(void)
 {
 	int choix;
@@ -53,6 +64,10 @@ int main(void)
 		else if (choix == 2)
 		{
 			sub();
+		}
+		else if (choix == 3)
+		{
+			mul();
 		}
 	} while(choix != 0);
 	return (0);
