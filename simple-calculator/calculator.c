@@ -66,8 +66,8 @@ int main(void)
 		}
 		else if (choix == 0)
 		{
-		printf("Bye!\n");
-		return (0);
+			printf("Bye!\n");
+			return (0);
 		}
 		else if (choix == 1)
 		{
