@@ -56,7 +56,7 @@ int main(void)
 	int choix;
 
 	printf("Welcome\n\nSimple Calculator\n");
-	printf("1) Add\n2) Substract\n3) Multiply\n4) Divide\n0) Quit\n");
+	printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
 	do{
 		printf("Choice: ");
 		scanf("%d", &choix);
