@@ -22,7 +22,8 @@ In task 2, we are presented with the concept of consistent testing, deciding the
 
 # Relation Between Runtime and Energy Consumption
 
-Through this project, we can make the hypothesis that Energy Consumption = machine power x time, in other words, less runtime = less energy consumption. So striving for a shorter runtime is also striving for a less energy hungry process.
+Through this project, we can make the hypothesis that Energy Consumption = machine power x time, every time the code gets more complex, if we compare each codes provided to us in this project, the time spent rises.
+In other words, less runtime = less energy consumption. So striving for a shorter runtime is also striving for a less energy hungry process.
 
 # Limitations of the Experiment
 
