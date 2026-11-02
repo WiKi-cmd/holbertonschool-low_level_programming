@@ -61,13 +61,13 @@ BUILD_DATA seconds: 0.000134
 PROCESS seconds: 0.000108
 REDUCE seconds: 0.000044
 
-Task 0, we noticed that the same program running multiple time doesn't necesseraily mean that all runtimes will be equal (3 different runtimes, close but different).
+Task 0, we noticed that the same program running multiple time doesn't necesseraily mean that all runtimes will be equal (3 different runtimes).
 
-Task 1, we are presented with the concept of complexity, a program with a complexity of O(n) (single_pass algotrithm) runs a lot faster than a program with a O(n**2) complexity (naive algorithm)
+Task 1, we are presented with the concept of complexity, a program with a complexity of O(n) (single_pass) runs a lot faster than a program with a O(n**2) complexity (naive)
 
-Task 2, we are presented with the concept of consistent testing, deciding the boundaries for each measurement (Build_data runtime, Process runtime and Reduce runtime) in a way that allows us to precisely compare them. In other words, deciding for all three where to start and stop the clock so that the results can be compared precisely.
+Task 2, we are presented with the concept of consistent testing, deciding the boundaries for each measurement (Build_data, Process and Reduce) in a way that allows us to precisely compare them. In other words, deciding for all three where to start and stop the clock so that the results can be compared precisely.
 Moreover, we notice by comparing the results that generally, regardin runtime, REDUCE < PROCESS < BUILD_DATA. We can also see all three are of complexity O(n), however, the body of each functions are more or less heavy.
-Indeed, REDUCE only multiples by a constant, PROCESS divides and uses modulo and BUILD_DATA multiplies, uses modulo and depends on the latency for each generation of the state variable.
+REDUCE multiples by a constant, PROCESS divides and uses modulo and BUILD_DATA multiplies, uses modulo and depends on the latency for each generation of the state variable explaining the runtime differences.
 # Relation Between Runtime and Energy Consumption
 
 Through this project, we can make the hypothesis that Energy Consumption = machine power x time, every time the code gets more complex, if we compare each codes provided to us in this project, the time spent rises.
