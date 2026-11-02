@@ -2,16 +2,17 @@
 
 The measurement methodology is as followed: each clock time is started before the beginning of a process, that is to say, we start the clock before each function call in the main or, if there is no call, before the body of the main fucntion. We stop the clock at the end of the process but before the output (printf()). We then convert this process time by diving the difference between the end and the start by CLOCKS_PER_SEC to get the elapsed time result in seconds. We finally print the result as a float with 6 decimals max
 For example:
+
 int main(void)
     clock_t start;
     clock_t end;
-    double elapsed
+    double elapsed;
 
     start = clock();
     function();
-    end = clock
-    elapsed = (double)(end - start) / (double)CLOCKS_PER_SEC
-    printf("Time elapsed: %.6f\n", elapsed)
+    end = clock;
+    elapsed = (double)(end - start) / (double)CLOCKS_PER_SEC;
+    printf("Time elapsed: %.6f\n", elapsed);
 
 # Observed Performance Differences
 
