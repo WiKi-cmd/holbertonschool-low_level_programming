@@ -27,6 +27,7 @@ Through this project, we can make the hypothesis that Energy Consumption = machi
 
 We can, however, point that a faster code doesn't always mean a green code, it can also mean greater ressources used to make more complex processes faster (High-end CPU, high Memory Usage). In my case, that means that my results are biased towards the performances of my computer and different machines can so output different results.
 Also, what's measured in each of those cases isn't exactly the whole process, we only measure the time the processess spend to call or use functions but not the time spent initializing the variables or the time spent to format and send the output.
+Moreover, we can discuss the precision of each measurement, indeed, the same program running three separate times provides us with different results (Task 0) so comparing a changing result to another must lead to imprecisions in regard of wether a code is more or less green.
 
 # Practical Engineering Takeaway
 
