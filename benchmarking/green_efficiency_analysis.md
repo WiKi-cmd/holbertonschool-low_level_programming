@@ -4,15 +4,17 @@ The measurement methodology is as followed: each clock time is started before th
 For example:
 
 int main(void)
-    clock_t start;
-    clock_t end;
-    double elapsed;
+{
+	clock_t start;
+	clock_t end;
+	double elapsed;
 
-    start = clock();
-    function();
-    end = clock;
-    elapsed = (double)(end - start) / (double)CLOCKS_PER_SEC;
-    printf("Time elapsed: %.6f\n", elapsed);
+	start = clock();
+	function();
+	end = clock;
+	elapsed = (double)(end - start) / (double)CLOCKS_PER_SEC;
+	printf("Time elapsed: %.6f\n", elapsed);
+}
 
 # Observed Performance Differences
 
