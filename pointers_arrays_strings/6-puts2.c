@@ -14,19 +14,9 @@ void puts2(char *str)
 	{
 		c++;
 	}
-	if (c % 2 == 0)
+	for (i = 0; i < c; i += 2)
 	{
-		for (i = 0; i <= c; i += 2)
-		{
-			_putchar(str[i]);
-		}
-	}
-	else
-	{
-		for (i = 0; i <= c - 1; i += 2)
-		{
-			_putchar(str[i]);
-		}
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
