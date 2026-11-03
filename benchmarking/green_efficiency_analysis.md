@@ -17,26 +17,26 @@ int main(void)
 # Observed Performance Differences
 
 Task 0 Results:
- Iterations: 100000000
-Execution time: 0.071407 seconds
-Iterations: 100000000
-Execution time: 0.070095 seconds
-Iterations: 100000000
-Execution time: 0.064190 seconds
+- Iterations: 100000000
+- Execution time: 0.071407 seconds
+- Iterations: 100000000
+- Execution time: 0.070095 seconds
+- Iterations: 100000000
+- Execution time: 0.064190 seconds
 
 Task 1 Results:
-Naive algorithm result: 625025000
-Naive algorithm time: 0.572488 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000026 seconds
-Naive algorithm result: 625025000
-Naive algorithm time: 0.583030 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000021 seconds
-Naive algorithm result: 625025000
-Naive algorithm time: 0.554829 seconds
-Single-pass algorithm result: 25000
-Single-pass algorithm time: 0.000022 seconds
+- Naive algorithm result: 625025000
+- Naive algorithm time: 0.572488 seconds
+- Single-pass algorithm result: 25000
+- Single-pass algorithm time: 0.000026 seconds
+- Naive algorithm result: 625025000
+- Naive algorithm time: 0.583030 seconds
+- Single-pass algorithm result: 25000
+- Single-pass algorithm time: 0.000021 seconds
+- Naive algorithm result: 625025000
+- Naive algorithm time: 0.554829 seconds
+- Single-pass algorithm result: 25000
+- Single-pass algorithm time: 0.000022 seconds
 
 AVERAGE TIME:
 - Naive algorithm: 0.570116 seconds
@@ -46,20 +46,20 @@ AVERAGE TIME:
 
 Task 2 Results:
 
-TOTAL seconds: 0.000271
-BUILD_DATA seconds: 0.000122
-PROCESS seconds: 0.000102
-REDUCE seconds: 0.000047
+- TOTAL seconds: 0.000271
+- BUILD_DATA seconds: 0.000122
+- PROCESS seconds: 0.000102
+- REDUCE seconds: 0.000047
 
-TOTAL seconds: 0.000286
-BUILD_DATA seconds: 0.000134
-PROCESS seconds: 0.000108
-REDUCE seconds: 0.000044
+- TOTAL seconds: 0.000286
+- BUILD_DATA seconds: 0.000134
+- PROCESS seconds: 0.000108
+- EDUCE seconds: 0.000044
 
-TOTAL seconds: 0.000286
-BUILD_DATA seconds: 0.000134
-PROCESS seconds: 0.000108
-REDUCE seconds: 0.000044
+- TOTAL seconds: 0.000286
+- BUILD_DATA seconds: 0.000134
+- PROCESS seconds: 0.000108
+- REDUCE seconds: 0.000044
 
 Task 0, we noticed that the same program running multiple time doesn't necesseraily mean that all runtimes will be equal (3 different runtimes).
 
