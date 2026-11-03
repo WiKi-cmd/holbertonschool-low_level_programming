@@ -4,7 +4,7 @@
 /**
 * _strchr - entry point
 * @s: string we will search
-* @c: character we are looking
+* @c: character we are looking for
 *
 * Return: pointer to the first occurence of the character otherwise NULL
 */
