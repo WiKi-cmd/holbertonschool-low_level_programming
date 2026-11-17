@@ -4,6 +4,8 @@
 * main - entry point
 * @argc: argument count
 * @argv: list of arguments
+*
+* Return: 0 for success
 */
 int main(int argc, char *argv[])
 {
