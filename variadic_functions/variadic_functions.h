@@ -6,7 +6,7 @@
 
 typedef struct print_functions
 {
-	char *type;
+	char type;
 	void (*f)(va_list, char *);
 } pfunc;
 
