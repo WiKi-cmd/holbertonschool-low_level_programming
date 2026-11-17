@@ -4,6 +4,12 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+typedef struct print_functions
+{
+    char *type;
+    void (*f)(va_list, char *)
+} pfunc;
+
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
