@@ -3,7 +3,7 @@
 
 /**
 * print_char - entry point
-* @va_list: argument list from which we take the argument to print
+* @ap: argument list from which we take the argument to print
 * @separator: separator to print between arguments we print
 */
 void print_char(va_list ap, char *separator)
@@ -13,7 +13,7 @@ void print_char(va_list ap, char *separator)
 
 /**
 * print_int - entry point
-* @va_list: argument list from which we take the argument to print
+* @ap: argument list from which we take the argument to print
 * @separator: separator to print between arguments we print
 */
 void print_int(va_list ap, char *separator)
@@ -23,17 +23,17 @@ void print_int(va_list ap, char *separator)
 
 /**
 * print_float - entry point
-* @va_list: argument list from which we take the argument to print
+* @ap: argument list from which we take the argument to print
 * @separator: separator to print between arguments we print
 */
 void print_float(va_list ap, char *separator)
 {
-	printf("%s%f",separator, va_arg(ap, double));
+	printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
 * print_string - entry point
-* @va_list: argument list from which we take the argument to print
+* @ap: argument list from which we take the argument to print
 * @separator: separator to print between arguments we print
 */
 void print_string(va_list ap, char *separator)
