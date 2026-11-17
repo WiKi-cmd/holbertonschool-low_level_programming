@@ -27,7 +27,7 @@ int is_digits(char *s)
 */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 1;
 	int sum = 0;
 
 	if (argc == 0)
@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 		sum += atoi(argv[i]);
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
