@@ -59,6 +59,7 @@ aliasing_example: aliasing and use-after-free (Valgrind should report it)
 - Invalid read of size 4 (line 42) : this is a use-after-free where we try to dereference b[2] although the the block was already freed which is undefined behavior (b is a dangling pointer at this point)
 - Invalid write of size 4 (line 44) : this is also a use-after-free where we try to change the value of b[3], same reasoning as before so undefined behavior with the added risk of possibly corrupting data if said memory was reallocated since
 - Invalid read of size 4 (line 45) : this is a use-after-free where we try to dereference b[3] although the the block was already freed which is undefined behavior (b is a dangling pointer at this point)
+-AI errors, doesn't separate a and b as different varaibles at first, considered the invalid write as more dangerous with no additionnal contextand thus speculated.
 
 # heap_example.c
 
@@ -92,5 +93,6 @@ heap_example: allocations and a deliberate leak
 ==45230== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 
 - one memory leak of 6 bytes
-- the memory object involved is the 6-byte block allocated for alice->name which is freed incorrectly
+- the memory object involved is the heap copy of the string "Alice", 6-byte block allocated for alice->name which is freed incorrectly
 - Indeed, for Alice, the freeing process is passed to the function person_free_partial(Alice) which only frees the structure itself but not the pointer alice->name so we lose the adress of said pointer and thus we lose the 6-bytes allocated to said pointer
+- AI errors: assumed all frees came from the program when one came libc, presented "6 bytes means Alice" when it's only further proof and not how we can check (==45230==    by 0x40012FA: main (heap_example.c:51) this is the line showing us the issue comes from Alice)
